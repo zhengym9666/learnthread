@@ -11,7 +11,7 @@ class ThreadJoin implements Runnable {
     }
 }
 
-//join():让其他线程先进入等待状态，自己先执行
+//join():让其他线程先进入等待状态（释放CPU执行权），自己先执行，自己执行完毕之后才会交出CPU执行权
 //必须启动了线程之后再调用join方法才会生效
 public class ThreadJoinDemo {
 
